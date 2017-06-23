@@ -1,0 +1,56 @@
+body {
+  font: 14px "Lucida Console", Monaco, monospace;
+  background: black;
+}
+
+a {
+  color: #00B7FF;
+}
+
+header {
+  width: 100%;
+}
+
+#page-header {
+  padding: 25px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: #72bcd4;
+}
+
+.head-room, #input-text-form {
+  margin-top: 20px;
+}
+
+.foot-room {
+  margin-bottom: 20px;
+}
+
+#input-text, #submit-text-btn {
+  margin-left: 20px;
+}
+
+.chart-header {
+  text-align: center;
+  color: red;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.ct-chart {
+  background-color: #fff;
+  background: linear-gradient(135deg, #ffffff, #ececec);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  font-size: 1rem;
+  text-align: center;
+  stroke-width: 35;
+  border: 2px solid #fff;
+}
+
+.ct-bar {
+  color: green;
+}
+
+.ct-label {
+  font-size: .85rem;
+  color: #696969;
+}

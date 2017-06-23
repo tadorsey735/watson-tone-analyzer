@@ -1,0 +1,74 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Make Asynchronous Requests
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Open+Sans')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.css')
+    link(rel='stylesheet', href='/css/chartist.min.css')
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    .row-fluid
+      header: h1#page-header IBM Bluemix Tone Analyzer
+      .col-sm-5
+        form#input-text-form(onsubmit='return false')
+          .form-group
+            label(for='input-text' style='color: white;') Add some text:
+            textarea.form-control#input-text(rows='15')
+        .form-group
+          button.btn.btn-primary#submit-text-btn(onclick='submitText()') Analyze
+      .col-sm-1
+      .col-sm-5
+        .row.head-room
+          h3.chart-header Emotional Tone
+            .ct-chart#chart1
+        .row.head-room
+          hr
+          h3.chart-header Linguistic Tone
+            .ct-chart#chart2
+        .row.head-room.foot-room
+          hr
+          h3.chart-header Social Tone
+            .ct-chart#chart3
+      .col-sm-1
+    .row-fluid
+      .col-sm-12.foot-room
+    script(src='/js/chartist.min.js')
+    script(src='/js/index.js')
+    script.
+      var options = {
+        high: 100,
+        low: 0,
+        horizontalBars: true,
+        divisor: 10,
+        axisX: {
+          showGrid: false,
+          onlyInteger: true
+        },
+        chartPadding: {
+          top: 5,
+          right: 40,
+          bottom: 5,
+          left: 110
+        }
+      }
+      
+      var chart1 = new Chartist.Bar('#chart1', {
+        labels: ["Anger", "Disgust", "Fear", "Joy", "Sadness", ""],
+        series: [[0, 0, 0, 0, 0, 0]]
+      }, options);
+      
+      var chart2 = new Chartist.Bar('#chart2', {
+        labels: ["Tentative", "Confident", "Analytical", ""],
+        series: [[0, 0, 0, 0]]
+      }, options);
+      
+      var chart3 = new Chartist.Bar('#chart3', {
+        labels: ["Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism", ""],
+        series: [[0, 0, 0, 0, 0, 0]]
+      }, options);
+      initCharts();
