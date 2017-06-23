@@ -6,7 +6,6 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
-    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Open+Sans')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.css')
     link(rel='stylesheet', href='/css/chartist.min.css')
@@ -18,25 +17,19 @@ html
         form#input-text-form(onsubmit='return false')
           .form-group
             label(for='input-text' style='color: white;') Add some text:
-            textarea.form-control#input-text(rows='15')
+            textarea.form-control#input-text(rows='12')
         .form-group
           button.btn.btn-primary#submit-text-btn(onclick='submitText()') Analyze
-      .col-sm-1
-      .col-sm-5
-        .row.head-room
+      .col-sm-7(style='padding: 0 20px;')
+        .row
           h3.chart-header Emotional Tone
-            .ct-chart#chart1
+          .ct-chart#chart1
         .row.head-room
-          hr
           h3.chart-header Linguistic Tone
-            .ct-chart#chart2
+          .ct-chart#chart2
         .row.head-room.foot-room
-          hr
           h3.chart-header Social Tone
-            .ct-chart#chart3
-      .col-sm-1
-    .row-fluid
-      .col-sm-12.foot-room
+          .ct-chart#chart3
     script(src='/js/chartist.min.js')
     script(src='/js/index.js')
     script.

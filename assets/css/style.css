@@ -20,6 +20,7 @@ header {
 
 .head-room, #input-text-form {
   margin-top: 20px;
+  padding-right: 50px;
 }
 
 .foot-room {
@@ -34,6 +35,8 @@ header {
   text-align: center;
   color: red;
   font-family: "Courier New", Courier, monospace;
+  padding-top: 15px;
+  padding-bottom: 5px;
 }
 
 .ct-chart {
