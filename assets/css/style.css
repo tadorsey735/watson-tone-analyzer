@@ -18,9 +18,12 @@ header {
   color: #72bcd4;
 }
 
-.head-room, #input-text-form {
-  margin-top: 20px;
+#input-text-form {
   padding-right: 50px;
+}
+
+.head-room {
+  margin-top: 20px;
 }
 
 .foot-room {
