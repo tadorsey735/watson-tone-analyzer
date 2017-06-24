@@ -60,3 +60,8 @@ header {
   font-size: .85rem;
   color: #696969;
 }
+
+#source-link {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
