@@ -23,7 +23,7 @@ And but yet, being the penny-a-pop philospher you are, you're tempted to think t
 <img src="./assets/ouroboros.jpg" width="100%">
 
 
-## The World's Different After 300 Years on Ice
+## The World's Different After 300 Years on Ice and Python 2 is Officially EOL
 
 So now that you're caught up a little bit, let's jump in. First you'll need Python 3.7 and virtualenv installed on your machine. You can check if they are by using these commands:
 
@@ -45,13 +45,13 @@ bash ./bin/setup.sh
 python main.py
 ```
 
-> Now that you're off ice, it's advised to avoid mirrors and reflective surfaces in general. Even a glimpse of the sleeve's body before your stack has fully integrated with it could result in a psychotic break. This is particularly true if you're being re-sleeved for the first time since suffering a violent death.
+> Now that you're off ice, it's advised to avoid mirrors and reflective surfaces in general. Even a glimpse of your new sleeve's face before you've had time to psychologically prepare could result in a psychotic break. This is particularly true if you're being re-sleeved for the first time since suffering a violent death.
 
 ## Life in the Clouds
 
-Humanity has massively over-populated the Earth. Turns out our longer lifespans is a huge turn on and we're breeding at a bacterial rate now, creating complex familial structures with sometimes seven or eight parents at one layer spawning a massive, interconnected layer beneath them and it's not uncommon for someone to have only met a fraction of their siblings.
+Humanity has massively over-populated the Earth. Turns out longer lifespans are a huge turn on and the species is breeding at a bacterial rate now, creating complex familial structures with sometimes seven or eight parents at one layer spawning a massive, interconnected layers beneath them and it's not uncommon for someone to have only met a fraction of their siblings and these days your likely to have a few uncles and aunts born after you were.
 
-For those rich enough to afford some peace and quiet away from the masses, there's only one direction to go: up. Today the privileged live in the clouds and try to avoid ground level interactions as much as possible. That's where you come in.
+And so for those rich enough to afford some peace and quiet away from the masses, there's only one direction to go: up. Today the privileged live in the clouds and try to avoid ground level interactions as much as possible. That's where you come in.
 
 <img src="./assets/aerium.png" width="100%">
 
@@ -62,7 +62,7 @@ If you hail from a distant enough era, *library* may conjure an image of row upo
 Today libraries don't waste your time by forcing you manually through the pages of a book. Instead, they offer you high-level control of complex tasks so you don't need to worry about the details. For example, here is how we might leverage the ec2 library to gather a list of all the ec2 instances in the production cloud account:
 
 ```python
-import aws.ec2 as aws_ec2
+import cloud.ec2 as cloud_ec2
 
-instances = ec2.get_all_instances(account="production")
+instances = cloud_ec2.get_all_instances(account="production")
 ```
